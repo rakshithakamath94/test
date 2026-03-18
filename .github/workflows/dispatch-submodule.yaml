@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Dispatch the changes
-        uses: actions/checkout@v4
+        uses: peter-evans/repository-dispatch@v3
         with:
           repository: rakshithakamath94/test-container
           event-type: update-submodule
